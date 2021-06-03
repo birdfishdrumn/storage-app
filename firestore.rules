@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+       match /{chat}/{chatId} {
+      allow read, write;
+
+    }
+    match /{products}/{productsId} {
+      allow read, write;
+
+    }
+    match /{productCategory}/{productCategoryId} {
+      allow read, write;
+
+    }
+
+    match /{path=**}/boxProduct/{boxProductID} {
+            allow read, write;
+    }
+    match /{boxes}/{boxesId} {
+      allow read, write;
+       match /{boxProduct}/{boxeProductId} {
+       allow read, write;
+       }
+    }
+  }
+}

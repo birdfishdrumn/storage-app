@@ -1,0 +1,329 @@
+/*********** Module Spacer ***********/
+
+.module-spacer--extra-extra-small {
+  height: 12px;
+}
+
+.module-spacer--extra-small {
+  height: 12px;
+}
+
+.module-spacer--small {
+  height: 20px;
+}
+
+.module-spacer--medium {
+  height: 32px;
+}
+
+.module-spacer--large {
+  height: 48px;
+}
+
+.module-spacer--xl {
+  height: 96px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/*********** Section ***********/
+
+body {
+  background-color: #fffafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.c-main {
+  padding: 70px 0;
+}
+
+.c-section__loading {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+}
+
+.c-section__loading > p {
+  color: #444;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-box {
+  text-align: center;
+  width: 500px;
+}
+
+.slider-img {
+  margin: 0 auto 50 auto;
+  min-width: 300px;
+  min-height: 100px;
+  height: 300px;
+  width: 70%;
+  object-fit: cover;
+  object-position: 20% 0px;
+}
+
+.p-grid__column {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.p-grid__row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.p-grid__list-images {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.p-grid__list-allimages {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.p-grid__list-allimages > .p-media__thumb {
+  margin: 0.5rem;
+  width: calc(50% - 1rem);
+  height: 150%;
+}
+
+.p-grid__list-images > .p-media__thumb {
+  margin: 0.5rem;
+  width: calc(50% - 1rem);
+}
+
+.p-media__thumb {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.p-media__thumb::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.p-media__thumb > img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.p-media__allThumb {
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  height: 300%;
+  object-fit: cover;
+}
+
+/*********** Footer ***********/
+
+/* .u-text-small {
+    font-size: .9rem;
+}
+
+.u-text__link-none {
+    text-decoration: none;
+}
+
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-text__headline {
+    color: grey;
+    font-size: 1.563rem;
+    margin: 0 auto 1rem auto;
+}
+
+.u-text__title {
+    color: grey;
+    font-size: 1.3rem;
+    margin: 0 auto 1rem auto;
+} */
+
+.u-display-none {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile_only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /*********** Module Spacer ***********/
+  .module-spacer--very-small {
+    height: 10px;
+  }
+  .module-spacer--extra-small {
+    height: 20px;
+  }
+  .module-spacer--small {
+    height: 32px;
+  }
+  /*********** Section ***********/
+  .c-section-wrapin {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*********** Module Spacer ***********/
+  .module-spacer--medium {
+    height: 48px;
+  }
+}
+
+/*********** border***********/
+
+.border {
+  border: dotted 1px gray;
+  padding: 30px 70px;
+  border-radius: 5px;
+  background-color: #f8f8ff;
+}
+
+@media (min-width: 1024px) {
+  .downMd {
+    display: none;
+  }
+}
+
+.MuiBottomNavigationAction-label {
+  font-size: 0.4rem !important;
+}
+
+/*********** sm-only***********/
+
+/* @media screen and (min-width:576px) {
+   .smartPhone{
+   display: inline;
+ }
+} */
+
+.cp-00 {
+  /* polygon( ) に3つの頂点の座標を指定して三角形のパスを定義 */
+  clip-path: circle(41.8% at 50% 74%);
+}
+
+.sample img {
+  max-width: 300px;
+  width: 100%;
+  object-position: top 50%;
+}
+
+.MuiDialog-paperWidthSm {
+  margin: 5px !important;
+}
+
+.fa-google {
+  color: #dd4b39;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  /* width: calc(var(--swiper-navigation-size) / 33 * 27);
+    height: var(--swiper-navigation-size); */
+  width: 30px !important;
+  height: 30px !important;
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 3px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
+  color: #000;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  /* font-size: var(--swiper-navigation-size); */
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.MuiDialog-paperFullScreen {
+  margin: 0 !important;
+}
+
+#scroll-container {
+  scroll-behavior: smooth;
+}
+
+.react-tagsinput-input {
+  width: 200px;
+}
+
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .MuiBox-root {
+    padding: 10px !important;
+  }
+}
